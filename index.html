@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuminarTech</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/Icon.ico" type="image" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="LuminarTech Logo">
+            <h3 class="greencolor">LUMINARTECH</h3>
+        </div>
+        <ul class="menu" id="menuList">
+            <li><a href="#sec1"> SOBRE NÓS</a></li>
+            <li><a href="#sec2"> NOSSOS SERVIÇOS</a></li>
+            <li><a href="#sec3">HISTÓRICO</a></li>
+            <li><a href="#sec4">LOCALIZAÇÃO</a></li>
+            <li><a href="#section-5">CONTATO</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <!--APRESENTAÇÃO DE FOTOS-->
+    <section id="sec0" class="green">
+        <div class="carousel">
+            <div class="list">
+
+                <div class="item" style="background-image: url(img/carousel/img1.png)">
+                </div>
+
+                <div class="item" style="background-image: url(img/carousel/img2.png)">
+                </div>
+
+                <div class="item" style="background-image: url(img/carousel/img3.png)">
+                </div>
+
+                <div class="item" style="background-image: url(img/carousel/img4.png)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SOBRE NOS-->
+    <section id="sec1" class="light">
+
+        <div class="section-about-image">
+            <img src="img/indeximg/Sec1.png">
+        </div>
+
+        <div class="section-about">
+            <img src="img/indeximg/referencelogo.png">
+            <p>A <strong>Luminar Tech Soluções Elétricas</strong> é uma empresa
+                emergente no setor de engenhariaelétrica, com mais de 3 anos de
+                experiência atendendo o setor industrial. Nossa missão é oferecer
+                serviços rápidos, eficientes e completos, garantindo que nossos
+                clientes recebam toda a assistência necessária em cada etapa do
+                processo.</p>
+            <h2>Nossa Missão</h2>
+            <p>Estamos comprometidos em prestar serviços de alta qualidade para
+                o setor industrial, acompanhando de perto cada projeto e
+                assegurando que nossos clientes tenham a assistência necessária
+                em todas as fases. Nosso diferencial é a dedicação em entregar um
+                serviço de excelência, mantendo um relacionamento próximo e de
+                confiança com nossos clientes.</p>
+        </div>
+    </section>
+
+    <!--NOSSOS SERVIÇOS-->
+    <section id="sec2" class="dark">
+        <div class="section-header">
+            <h2>Nossos Serviços</h2>
+            <p>Conheça as soluções que oferecemos para diferentes ambientes.</p>
+        </div>
+
+        <div class="cards-container">
+            <!--Residencial-->
+            <div class="card">
+                <h3 class="greencolor">Serviços Residenciais</h3>
+                <p>Soluções completas para sua casa: instalação elétrica, manutenção preventiva e muito mais.</p>
+                <button onclick="location.href='residential.html'" class="btn-saiba-mais">Saiba mais</button>
+            </div>
+            <!--Industrial-->
+            <div class="card">
+                <h3 class="greencolor">Serviços Industriais</h3>
+                <p>Atendemos demandas industriais com foco em segurança, eficiência energética e automação.</p>
+                <button onclick="location.href='industry.html'" class="btn-saiba-mais">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <!--HISTORICOS DE SUCESSOS-->
+    <section id="sec3" class="historico">
+        <div class="hist-container">
+            <h2 class="greencolor">HISTÓRICO DE SERVIÇOS</h2>
+            <br>
+            <div class="parcerias-grid">
+                <div class="parceria"><img src="img/works/his1.png" alt="Parceria 1"></div>
+                <div class="parceria"><img src="img/works/his2.jpg" alt="Parceria 2"></div>
+                <div class="parceria"><img src="img/works/his3.jpg" alt="Parceria 3"></div>
+                <div class="parceria"><img src="img/works/his4.png" alt="Parceria 4"></div>
+                <div class="parceria"><img src="img/works/his5.png" alt="Parceria 5"></div>
+                <div class="parceria"><img src="img/works/his6.png" alt="Parceria 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--LOCALIZAÇÃO-->
+    <section id="sec4" class="green">
+        <div class="section-header">
+            <h2>LOCALIZAÇÃO</h2>
+            <p>Estamos prontos para te receber! Confira onde estamos localizados.</p>
+        </div>
+
+        <div class="location-div">
+            <div class="location-container">
+                <div class="address">
+                    <h3 class="greencolor">Nosso Endereço</h3>
+                    <p>Av. Prof. João Thomes, ####</p>
+                    <p>Jardim Alvorada, Três Lagoas - MS</p>
+                    <p>CEP: 79610-180</p>
+
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.9975784719334!2d-51.678223!3d-20.8000275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9490a32072fcdbc3%3A0xf364193cfdfb2ec8!2sLuminar%20Tech%20Solu%C3%A7%C3%B5es%20El%C3%A9tricas!5e0!3m2!1spt-BR!2sbr!4v1717603791789!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTATO-->
+    <section id="section-5" class="dark contact-section">
+        <div class="contact-container">
+            <h2 class="highlight-text">
+                Descubra a excelência da engenharia elétrica com a <span class="greencolor">Luminar Tech</span> Soluções
+                Elétricas
+            </h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>(67) 99945-4728</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Três Lagoas - MS</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>@luminar_tech</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
