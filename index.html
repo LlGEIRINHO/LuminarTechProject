@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/works.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link rel="icon" href="img/icon/Icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>LuminarTech</title>
@@ -14,23 +18,23 @@
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-bolt" id="nav_logo"></i>
+            <i id="nav_logo"><img src="img/icon/Icon.ico"></i>
 
             <ul id="nav_list">
                 <li class="nav-item">
                     <a href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about">Sobre Nós</a>
+                    <a href="#about-us">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
                     <a href="#parceiros">Parcerias</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
             </ul>
-
-            <button class="btn-default">
-                Teste
-            </button>
+            
 
             <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -43,16 +47,15 @@
                     <a href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about">Sobre Nós</a>
+                    <a href="#about-us">Sobre Nós</a>
                 </li>
                 <li class="nav-item">
                     <a href="#parceiros">Parcerias</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
             </ul>
-
-            <button class="btn-default">
-                Teste
-            </button>
         </div>
     </header>
 
@@ -61,7 +64,7 @@
             <div class="shape"></div>
             <div id="cta">
                 <h1 class="title">
-                    Luminar<span class="greencolor">Tech</span>
+                    Luminar<br class="break-mobile"><span class="greencolor">Tech</span>
                 </h1>
 
                 <p class="description">
@@ -80,53 +83,38 @@
             </div>
 
             <div id="banner">
-                <img src="hero.png">
+                <img src="img/references/banner.png">
             </div>
         </section>
+    </main>
 
-        <section id="testimonials">
-            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
-<script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-4e4f354d-e161-4be3-b1b3-8cd21ccdba79" data-elfsight-app-lazy></div>
-        <!--<div id="testimonials_header">
-                <h1>Avaliações</h1>
-                <h2>Opniões dos Nossos Clientes</h2>
-                <p>Saiba o que os nossos clientes dizem sobre nós</p>
+    <section id="about-us">
+        <div class="about-container">
+            <h1 class="about-title">Sobre Nós</h1>
+            <p class="about-text">
+                A <strong class="greencolor">Luminar Tech Soluções Elétricas</strong> é uma empresa emergente no setor de engenharia elétrica, 
+                com mais de 3 anos de experiência atendendo o setor industrial. Nossa missão é oferecer serviços 
+                rápidos, eficientes e completos, garantindo que nossos clientes recebam toda a assistência 
+                necessária em cada etapa do processo.
+            </p>
+
+            <h2 class="about-subtitle">Nossa Missão</h2>
+            <p class="about-text">
+                Estamos comprometidos em prestar serviços de alta qualidade para o setor industrial, 
+                acompanhando de perto cada projeto e assegurando que nossos clientes tenham a assistência 
+                necessária em todas as fases. Nosso diferencial é a dedicação em entregar um serviço de excelência, 
+                mantendo um relacionamento próximo e de confiança com nossos clientes.
+            </p>
+            <div class="logo-explanation">
+                <img src="/img/references/logs.png" alt="Explicação do Logo Luminar Tech">
             </div>
-            <div class="swiper">
+        </div>
+    </section>
 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div id="testimonials_rate">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
 
-                        <blockquote>
-                            "Teste"
-                        </blockquote>
-
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    ...
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-        -->
-        </section>
-
-        <!--<section id="sec3" class="historico">
+    <section id="parceiros" class="historico">
         <div class="hist-container">
-            <h1 class="title"><span class="greencolor">PARCERIAS</span></h1>
+            <h1 class="title" style="color: #1d1d1d;">PARCERIAS</h1>
             <br>
             <div class="parcerias-grid">
                 <div class="parceria"><img src="img/works/his1.png" alt="Parceria 1"></div>
@@ -137,9 +125,15 @@
                 <div class="parceria"><img src="img/works/his6.png" alt="Parceria 6"></div>
             </div>
         </div>
-        </section>
-        -->
-    </main>
+    </section>
+
+    <section id="testimonials">
+        <div class="testimonial-container">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-4e4f354d-e161-4be3-b1b3-8cd21ccdba79" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="javascript/script.js"></script>
