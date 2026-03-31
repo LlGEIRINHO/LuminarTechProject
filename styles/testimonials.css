@@ -1,0 +1,55 @@
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(180deg, #bfff00 30%, #60b200 100%);
+}
+
+.testimonial-container {
+    max-width: 1000px; /* Largura um pouco maior para acomodar os depoimentos lado a lado se houver */
+    width: 100%;
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #2ecc71; /* Mantém o padrão visual da Luminar Tech */
+    text-align: center;
+}
+
+.testimonial-title {
+    font-size: 2.2rem;
+    color: #1d1d1d;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Linha decorativa abaixo do título, igual ao "Sobre Nós" */
+.testimonial-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2ecc71;
+    margin: 10px auto 0;
+}
+
+/* Ajuste para o Widget não "quebrar" o card em telas menores */
+.elfsight-app-4e4f354d-e161-4be3-b1b3-8cd21ccdba79 {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+    #testimonials {
+        padding: 3rem 1rem;
+    }
+    .testimonial-container {
+        padding: 2rem 1rem;
+    }
+    .testimonial-title {
+        font-size: 1.8rem;
+    }
+}
