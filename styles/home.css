@@ -59,6 +59,10 @@
     z-index: 1;
 }
 
+.break-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1170px) {
     #home {
         min-height: 100%;
@@ -75,5 +79,9 @@
         width: 100%;
         text-align: center;
         align-items: center;
+    }
+
+    .break-mobile {
+        display: block;
     }
 }

@@ -11,8 +11,16 @@ header {
 }
 
 #nav_logo {
-    font-size: 24px;
+    size: 12px;
     color: #60b200;
+}
+
+#nav_logo img {
+    /* Ajuste esses valores conforme sua preferência */
+    width: 35px;  /* Largura do ícone */
+    height: 35px; /* Altura do ícone */
+    
+    object-fit: contain; /* Garante que o ícone não distorça */
 }
 
 #nav_list {

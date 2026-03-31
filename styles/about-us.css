@@ -1,0 +1,74 @@
+#about-us {
+    display: block; 
+    min-height: auto;
+    padding: 5rem 1rem;
+    background-color: #f5f5f5;
+    text-align: center; /* Centraliza os títulos e textos */
+}
+
+.about-container {
+    max-width: 800px; /* Limita a largura para o texto não ficar cansativo de ler */
+    margin: 0 auto;   /* Centraliza o bloco na tela */
+}
+
+/* Título Principal */
+.about-title {
+    font-size: 2.5rem;
+    color: #1d1d1d;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Subtítulo (Missão) */
+.about-subtitle {
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    margin-top: 3rem;   /* Espaço extra antes de começar a missão */
+    margin-bottom: 1rem;
+}
+
+/* Parágrafos */
+.about-text {
+    font-size: 1.1rem;
+    color: #1d1d1d;
+    line-height: 1.8;  /* Aumenta o espaço entre linhas (identação vertical) */
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+/* Destaque opcional para o nome da empresa */
+.about-text strong {
+    color: #2ecc71; /* Use o verde da sua marca aqui */
+}
+
+.logo-explanation {
+    margin-top: 4rem; /* Espaço generoso entre o texto e a imagem */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    width: 100%;
+}
+
+.logo-explanation img {
+    max-width: 100%;    /* Garante que não ultrapasse a largura da tela no celular */
+    width: 650px;        /* Tamanho ideal para desktop (ajuste se quiser maior/menor) */
+    height: auto;
+    border-radius: 12px; /* Combina com o estilo dos outros itens do site */
+    opacity: 0.9;        /* Deixa levemente suave para combinar com o fundo #f5f5f5 */
+    transition: opacity 0.3s ease;
+}
+
+.logo-explanation img:hover {
+    opacity: 1; /* Ganha foco total ao passar o mouse */
+}
+
+/* Ajuste Mobile */
+@media (max-width: 768px) {
+    .about-title { font-size: 2rem; }
+    .about-subtitle { font-size: 1.5rem; }
+    #about-us { padding: 3rem 1rem; }
+
+    .logo-explanation {
+        margin-top: 2.5rem;
+    }
+}

@@ -1,0 +1,28 @@
+#testimonials {
+    display: block; 
+    min-height: auto;
+    padding: 4rem 1rem;
+    background: linear-gradient(180deg, #bfff00 30%, #60b200 100%);
+
+}
+
+.testimonial-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    background-color: #f5f5f5; 
+    padding: 2rem;             
+    border-radius: 20px;       
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+}
+
+.elfsight-app-4e4f354d-e161-4be3-b1b3-8cd21ccdba79 {
+    min-height: 400px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .testimonial-container {
+        padding: 1rem; 
+    }
+}
