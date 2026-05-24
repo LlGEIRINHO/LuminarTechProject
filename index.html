@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuminarTech</title>
-    <link rel="icon" href="/img/icon/Icon.ico">
+    <link rel="icon" href="/img/icon/Icon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -56,7 +56,7 @@
         <div class="home-banner">
             <div class="banner-shape"></div>
             <div class="banner-img-wrap">
-                <img src="img/references/banner.png" alt="Técnico especializado LuminarTech">
+                <img src="img/references/banner.png" type="image/png" alt="Técnico especializado LuminarTech">
             </div>
         </div>
     </section>
@@ -381,5 +381,20 @@
         </div>
     </footer>
     <script src="javascript/script.js"></script>
+    <script>
+        const words = ['Instalações Industriais', 'Energia Solar', 'Projetos Elétricos', 'Soluções Residenciais', 'Manutenção 24h'];
+        let wi = 0, ci = 0, deleting = false;
+        const el = document.getElementById('typed');
+
+        function type() {
+            const w = words[wi];
+            el.textContent = deleting ? w.slice(0, --ci) : w.slice(0, ++ci);
+            let delay = deleting ? 50 : 80;
+            if (!deleting && ci === w.length) { delay = 2000; deleting = true; }
+            else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 400; }
+            setTimeout(type, delay);
+        }
+        type();
+    </script>
 </body>
 </html>

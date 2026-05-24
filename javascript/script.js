@@ -1,17 +1,3 @@
-const words = ['Instalações Industriais', 'Energia Solar', 'Projetos Elétricos', 'Soluções Residenciais', 'Manutenção 24h'];
-        let wi = 0, ci = 0, deleting = false;
-        const el = document.getElementById('typed');
-
-        function type() {
-            const w = words[wi];
-            el.textContent = deleting ? w.slice(0, --ci) : w.slice(0, ++ci);
-            let delay = deleting ? 50 : 80;
-            if (!deleting && ci === w.length) { delay = 2000; deleting = true; }
-            else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 400; }
-            setTimeout(type, delay);
-        }
-        type();
-
         /* ── Mobile menu ── */
         const menuIcon = document.getElementById('menu-icon');
         const navbar = document.querySelector('.navbar');
