@@ -1,135 +1,400 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/about-us.css">
-    <link rel="stylesheet" href="styles/works.css">
-    <link rel="stylesheet" href="styles/testimonials.css">
-    <link rel="icon" href="img/icon/Icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>LuminarTech</title>
+    <link rel="icon" href="/img/icon/Icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <i id="nav_logo"><img src="img/icon/Icon.ico"></i>
 
-            <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-us">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#parceiros">Parcerias</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-            
+    <!-- ═══ HEADER ═══ -->
+    <header class="header">
+        <a href="#home" class="logo">Luminar<span>Tech</span></a>
 
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#services">Serviços</a>
+            <a href="#timeline">Histórico</a>
+            <a href="#partners">Parcerias</a>
+            <a href="#testimonials">Avaliações</a>
+            <a href="#contact">Contato</a>
         </nav>
-
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-us">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#parceiros">Parcerias</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-        </div>
     </header>
 
-    <main id="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div id="cta">
-                <h1 class="title">
-                    Luminar<br class="break-mobile"><span class="greencolor">Tech</span>
-                </h1>
+    <!-- ═══ HOME ═══ -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <span class="eyebrow">Soluções Elétricas</span>
+            <h1>Luminar<span>Tech</span></h1>
+            <div class="text-animation">
+                Trabalhamos com <span class="typed-word" id="typed"></span>
+            </div>
+            <p>Empresa emergente no setor de engenharia elétrica, com mais de X anos de experiência atendendo o setor industrial, residencial e comercial. Serviços rápidos, eficientes e completos.</p>
+            <div class="social-icons">
+                <a href="https://wa.me/556799454728" target="_blank" rel="noopener" title="WhatsApp">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/luminar_tech/" target="_blank" rel="noopener" title="Instagram">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+            <div class="btn-group">
+                <a href="https://wa.me/556799454728" target="_blank" class="btn btn-primary">Solicitar Orçamento</a>
+                <a href="#about" class="btn btn-outline">Saiba Mais</a>
+            </div>
+        </div>
 
-                <p class="description">
-                    A <strong class="greencolor">Luminar Tech Soluções Elétricas</strong> é uma empresa emergente no setor de engenharia elétrica, 
-                com mais de 3 anos de experiência atendendo o setor industrial. Nossa missão é oferecer serviços 
-                rápidos, eficientes e completos, garantindo que nossos clientes recebam toda a assistência 
-                necessária em cada etapa do processo.
-                </p>
+        <div class="home-banner">
+            <div class="banner-shape"></div>
+            <div class="banner-img-wrap">
+                <img src="img/references/banner.png" type="image/png" alt="Técnico especializado LuminarTech">
+            </div>
+        </div>
+    </section>
 
-                <div id="social-media-buttons">
-                    <a href="https://wa.me/556799454728" target="_blank" class="meu-botao">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
+    <!-- Stats strip -->
+    <div class="stats-strip">
+        <div class="stat-item">
+            <div class="num">X+</div>
+            <div class="label">Anos de experiência</div>
+        </div>
+        <div class="stat-item">
+            <div class="num">X+</div>
+            <div class="label">Projetos concluídos</div>
+        </div>
+        <div class="stat-item">
+            <div class="num">X+</div>
+            <div class="label">Clientes ativos</div>
+        </div>
+        <div class="stat-item">
+            <div class="num">100%</div>
+            <div class="label">Satisfação garantida</div>
+        </div>
+    </div>
 
-                    <a href="https://www.instagram.com/luminar_tech/" target="_blank" class="meu-botao">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about" id="about">
+        <div class="section-label">
+            <span class="eyebrow">Quem somos</span>
+            <h2>Sobre <span>Nós</span></h2>
+        </div>
+
+        <div class="about-cube-wrapper">
+            <div id="box">
+                <div class="top"></div>
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+        </div>
 
-            <div id="banner">
-                <img src="img/references/banner.png">
+        <button class="about-read-more-btn" id="readMoreBtn" onclick="toggleAbout()">
+            Ler Mais <i class="bx bx-chevron-down"></i>
+        </button>
+
+        <div class="about-text-panel" id="aboutPanel">
+            <p>A <strong>LuminarTech Soluções Elétricas</strong> é uma empresa emergente no setor de engenharia elétrica, com mais de X anos de experiência atendendo o setor <strong>industrial</strong>, <strong>residencial</strong> e <strong>comercial</strong>.</p>
+            <p>Nossa missão é oferecer serviços rápidos, eficientes e completos, garantindo que nossos clientes recebam toda a assistência necessária em cada etapa do processo. Nosso diferencial é a dedicação em entregar um serviço de excelência, mantendo um relacionamento próximo e de confiança.</p>
+        </div>
+
+        <div class="about-cards">
+            <div class="about-card">
+                <i class="bx bx-check-shield"></i>
+                <h4>Qualidade</h4>
+                <p>Materiais e técnicas de ponta para garantir segurança e durabilidade.</p>
             </div>
-        </section>
-    </main>
-
-    <section id="about-us">
-        <div class="about-container">
-            <h1 class="about-title">Sobre Nós</h1>
-            <p class="about-text">
-                Estamos comprometidos em prestar serviços de alta qualidade para o setor industrial, 
-                acompanhando de perto cada projeto e assegurando que nossos clientes tenham a assistência 
-                necessária em todas as fases. Nosso diferencial é a dedicação em entregar um serviço de excelência, 
-                mantendo um relacionamento próximo e de confiança com nossos clientes.
-            </p>
+            <div class="about-card">
+                <i class="bx bx-time"></i>
+                <h4>Agilidade</h4>
+                <p>Atendimento rápido e eficiente, respeitando prazos e cronogramas.</p>
+            </div>
+            <div class="about-card">
+                <i class="bx bx-group"></i>
+                <h4>Confiança</h4>
+                <p>Relacionamento próximo com cada cliente desde o primeiro contato.</p>
+            </div>
+            <div class="about-card">
+                <i class="bx bx-certification"></i>
+                <h4>Expertise</h4>
+                <p>Equipe qualificada com ampla experiência no setor elétrico industrial.</p>
+            </div>
         </div>
     </section>
 
-    <section id="parceiros" class="historico">
-        <div class="hist-container">
-            <h1 class="title" style="color: #1d1d1d;">PARCERIAS</h1>
-            <br>
-            <div class="parcerias-grid">
-                <div class="parceria"><img src="img/works/his1.png" alt="Parceria 1"></div>
-                <div class="parceria"><img src="img/works/his2.jpg" alt="Parceria 2"></div>
-                <div class="parceria"><img src="img/works/his3.jpg" alt="Parceria 3"></div>
-                <div class="parceria"><img src="img/works/his4.png" alt="Parceria 4"></div>
-                <div class="parceria"><img src="img/works/his5.png" alt="Parceria 5"></div>
-                <div class="parceria"><img src="img/works/his6.png" alt="Parceria 6"></div>
+    <!-- ═══ SERVICES ═══ -->
+    <section class="services" id="services">
+        <div class="section-label">
+            <span class="eyebrow">O que fazemos</span>
+            <h2>Nossos <span>Serviços</span></h2>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon"><i class="bx bx-buildings"></i></div>
+                <h4>Industrial</h4>
+                <p>Instalações, manutenção preventiva e corretiva para plantas industriais de grande porte, com foco em continuidade operacional.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="bx bx-home-alt-2"></i></div>
+                <h4>Residencial</h4>
+                <p>Projetos elétricos residenciais completos, desde instalações novas até reformas e adequações às normas vigentes.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="bx bx-store-alt"></i></div>
+                <h4>Comercial</h4>
+                <p>Soluções para estabelecimentos comerciais, incluindo SPDA (para-raios), quadros de distribuição e eficiência energética.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="bx bx-bolt-circle"></i></div>
+                <h4>Emergências</h4>
+                <p>Atendimento 24h para situações críticas, garantindo que sua operação volte ao normal o mais rápido possível.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="bx bx-analyse"></i></div>
+                <h4>Projetos Elétricos</h4>
+                <p>Elaboração de projetos técnicos detalhados, com memorial descritivo, dimensionamento e compliance com as normas ABNT.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="bx bxs-sun"></i></div>
+                <h4>Energia Solar</h4>
+                <p>Instalação e dimensionamento de sistemas fotovoltaicos para residências, comércios e indústrias com ROI garantido.</p>
             </div>
         </div>
     </section>
 
-    <section id="testimonials">
-        <div class="testimonial-container">
-            <h2 class="testimonial-title">O que nossos clientes dizem</h2>
-            <!-- O widget do Elfsight será carregado aqui dentro -->
+    <!-- ═══ TIMELINE ═══ -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-label">
+            <span class="eyebrow">Nossa trajetória</span>
+            <h2>Histórico <span>da Empresa</span></h2>
+        </div>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">20??</div>
+                    <h3>Fundação</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                </div>
+                <div style="flex:1"></div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div style="flex:1"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">20??</div>
+                    <h3>Expansão Industrial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">20??</div>
+                    <h3>Setor Residencial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                </div>
+                <div style="flex:1"></div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div style="flex:1"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date">20??</div>
+                    <h3>Energia Solar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PARTNERS ═══ -->
+    <section class="partners" id="partners">
+        <div class="section-label">
+            <span class="eyebrow">Quem confia em nós</span>
+            <h2>Nossas <span>Parcerias</span></h2>
+        </div>
+
+        <div class="partners-grid">
+            <div class="partner-card"><img src="img/works/his1.png" alt="Parceiro 1"></div>
+            <div class="partner-card"><img src="img/works/his2.jpg" alt="Parceiro 2"></div>
+            <div class="partner-card"><img src="img/works/his3.jpg" alt="Parceiro 3"></div>
+            <div class="partner-card"><img src="img/works/his4.png" alt="Parceiro 4"></div>
+            <div class="partner-card"><img src="img/works/his5.png" alt="Parceiro 5"></div>
+            <div class="partner-card"><img src="img/works/his6.png" alt="Parceiro 6"></div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-label">
+            <span class="eyebrow">Depoimentos</span>
+            <h2>O que nossos <span>clientes dizem</span></h2>
+        </div>
+
+        <div class="elfsight-wrapper">
             <script src="https://elfsightcdn.com/platform.js" async></script>
             <div class="elfsight-app-4e4f354d-e161-4be3-b1b3-8cd21ccdba79" data-elfsight-app-lazy></div>
         </div>
+    </section>  
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact" id="contact">
+        <div class="section-label">
+            <span class="eyebrow">Fale conosco</span>
+            <h2>Entre em <span>Contato</span></h2>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Pronto para<br>resolver seu projeto?</h3>
+                <p>Entre em contato conosco para um orçamento sem compromisso. Nossa equipe retorna em até 24 horas.</p>
+                <div class="contact-detail">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>(67) 9945-4728</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="bx bx-envelope"></i>
+                    <span>contato@luminartech.com.br</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="bx bx-map"></i>
+                    <span>Três Lagoas — Mato Grosso do Sul</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="bx bxl-instagram-alt"></i>
+                    <span>@luminar_tech</span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label>Empresa</label>
+                        <input type="text" placeholder="Nome da empresa">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="(67) 9 9999-9999">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de Serviço</label>
+                    <input type="text" placeholder="Ex.: Instalação industrial, energia solar...">
+                </div>
+                <div class="form-group">
+                    <label>Mensagem</label>
+                    <textarea placeholder="Descreva seu projeto ou necessidade..."></textarea>
+                </div>
+                <a href="https://wa.me/556799454728" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1.6rem; padding: 1.5rem;">
+                    <i class="bx bxl-whatsapp"></i> Enviar pelo WhatsApp
+                </a>
+            </div>
+        </div>
     </section>
 
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">Luminar<span>Tech</span></a>
+                <p>Soluções elétricas completas para o setor industrial, residencial e comercial. Qualidade, segurança e confiança em cada projeto.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/556799454728" target="_blank" title="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/luminar_tech/" target="_blank" title="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+                </div>
+            </div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+            <div class="footer-col">
+                <h5>Navegação</h5>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#timeline">Histórico</a></li>
+                    <li><a href="#partners">Parcerias</a></li>
+                    <li><a href="#testimonials">Avaliações</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Serviços</h5>
+                <ul>
+                    <li><a href="#services">Industrial</a></li>
+                    <li><a href="#services">Residencial</a></li>
+                    <li><a href="#services">Comercial</a></li>
+                    <li><a href="#services">Emergências 24h</a></li>
+                    <li><a href="#services">Projetos Elétricos</a></li>
+                    <li><a href="#services">Energia Solar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contato</h5>
+                <div class="footer-contact-item">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>(67) 9945-4728</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="bx bx-envelope"></i>
+                    <span>contato@luminartech.com.br</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="bx bx-map"></i>
+                    <span>Três Lagoas — MS<br>Brasil</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="bx bx-time"></i>
+                    <span>Seg–Sex: 08h–18h<br>Emergências: 24h</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 <span>LuminarTech</span> Soluções Elétricas. Todos os direitos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
     <script src="javascript/script.js"></script>
+    <script>
+        const words = ['Instalações Industriais', 'Energia Solar', 'Projetos Elétricos', 'Soluções Residenciais', 'Manutenção 24h'];
+        let wi = 0, ci = 0, deleting = false;
+        const el = document.getElementById('typed');
+
+        function type() {
+            const w = words[wi];
+            el.textContent = deleting ? w.slice(0, --ci) : w.slice(0, ++ci);
+            let delay = deleting ? 50 : 80;
+            if (!deleting && ci === w.length) { delay = 2000; deleting = true; }
+            else if (deleting && ci === 0) { deleting = false; wi = (wi + 1) % words.length; delay = 400; }
+            setTimeout(type, delay);
+        }
+        type();
+    </script>
 </body>
 </html>
