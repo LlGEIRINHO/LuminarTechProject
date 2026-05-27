@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&family=Barlow+Condensed:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
             <div class="text-animation">
                 Trabalhamos com <span class="typed-word" id="typed"></span>
             </div>
-            <p>Empresa emergente no setor de engenharia elétrica, com mais de X anos de experiência atendendo o setor industrial, residencial e comercial. Serviços rápidos, eficientes e completos.</p>
+            <p>Empresa emergente no setor de engenharia elétrica, com mais de 5 anos de experiência atendendo o setor industrial, residencial e comercial. Serviços rápidos, eficientes e completos.</p>
             <div class="social-icons">
                 <a href="https://wa.me/556799454728" target="_blank" rel="noopener" title="WhatsApp">
                     <i class="bx bxl-whatsapp"></i>
@@ -64,7 +64,7 @@
     <!-- Stats strip -->
     <div class="stats-strip">
         <div class="stat-item">
-            <div class="num">X+</div>
+            <div class="num">+5</div>
             <div class="label">Anos de experiência</div>
         </div>
         <div class="stat-item">
@@ -105,7 +105,7 @@
         </button>
 
         <div class="about-text-panel" id="aboutPanel">
-            <p>A <strong>LuminarTech Soluções Elétricas</strong> é uma empresa emergente no setor de engenharia elétrica, com mais de X anos de experiência atendendo o setor <strong>industrial</strong>, <strong>residencial</strong> e <strong>comercial</strong>.</p>
+            <p>A <strong>LuminarTech Soluções Elétricas</strong> é uma empresa emergente no setor de engenharia elétrica, com mais de 5 anos de experiência atendendo o setor <strong>industrial</strong>, <strong>residencial</strong> e <strong>comercial</strong>.</p>
             <p>Nossa missão é oferecer serviços rápidos, eficientes e completos, garantindo que nossos clientes recebam toda a assistência necessária em cada etapa do processo. Nosso diferencial é a dedicação em entregar um serviço de excelência, mantendo um relacionamento próximo e de confiança.</p>
         </div>
 
@@ -140,54 +140,129 @@
             <h2>Nossos <span>Serviços</span></h2>
         </div>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="icon"><i class="bx bx-buildings"></i></div>
-                <h4>Industrial</h4>
-                <p>Instalações, manutenção preventiva e corretiva para plantas industriais de grande porte, com foco em continuidade operacional.</p>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">
+                <i class="bx bx-chevron-left"></i>
+            </button>
+
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-shield-alt-2"></i></div>
+                        <h4>Alarme</h4>
+                        <p>Instalação e manutenção de sistemas de alarme para proteção residencial, comercial e industrial.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-home-heart"></i></div>
+                        <h4>Automação Residencial</h4>
+                        <p>Soluções inteligentes de automação para conforto, segurança e eficiência energética no lar.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-video"></i></div>
+                        <h4>Câmeras</h4>
+                        <p>Instalação de sistemas de câmeras de segurança (CFTV) para monitoramento e vigilância 24h.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-bolt-circle"></i></div>
+                        <h4>Cerca Elétrica</h4>
+                        <p>Instalação e manutenção de cercas elétricas para segurança perimetral de propriedades.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-hard-hat"></i></div>
+                        <h4>Instalação e Manutenção Elétrica</h4>
+                        <p>Serviços completos de instalação e manutenção de sistemas elétricos, garantindo eficiência e segurança.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-sun"></i></div>
+                        <h4>Iluminação Industrial</h4>
+                        <p>Soluções completas de iluminação industrial, do projeto à instalação, adaptadas a cada ambiente.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-camera"></i></div>
+                        <h4>Interfones / Videoporteiros</h4>
+                        <p>Instalação de interfones e videoporteiros para comunicação e controle de acesso com segurança.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-task"></i></div>
+                        <h4>Laudos Técnicos</h4>
+                        <p>Elaboração de laudos técnicos detalhados conforme normas vigentes, assegurando conformidade e segurança.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-bolt-circle"></i></div>
+                        <h4>Manutenção de Subestações</h4>
+                        <p>Manutenção especializada em subestações elétricas para funcionamento contínuo e seguro das operações.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-check"></i></div>
+                        <h4>Manutenção Preventiva e Corretiva</h4>
+                        <p>Manutenção preventiva para evitar falhas e corretiva para solucionar problemas em sistemas elétricos.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-ruler"></i></div>
+                        <h4>Medições de Aterramento</h4>
+                        <p>Medições precisas de aterramento para garantir segurança e eficácia dos sistemas elétricos.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-task"></i></div>
+                        <h4>Montagem de Painéis Elétricos</h4>
+                        <p>Projetos e montagem de painéis elétricos personalizados, atendendo às necessidades de cada cliente.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-joystick-alt"></i></div>
+                        <h4>Motores para Portões</h4>
+                        <p>Instalação e manutenção de motores para portões automáticos residenciais e comerciais.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-task"></i></div>
+                        <h4>Retrofit de Painéis Elétricos</h4>
+                        <p>Atualização e modernização de painéis elétricos para melhorar eficiência e prolongar vida útil.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="icon"><i class="bx bx-analyse"></i></div>
+                        <h4>Serviços de Engenharia Elétrica</h4>
+                        <p>Projetos e consultoria em engenharia elétrica com soluções técnicas para todos os segmentos.</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="service-card">
-                <div class="icon"><i class="bx bx-home-alt-2"></i></div>
-                <h4>Residencial</h4>
-                <p>Projetos elétricos residenciais completos, desde instalações novas até reformas e adequações às normas vigentes.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon"><i class="bx bx-store-alt"></i></div>
-                <h4>Comercial</h4>
-                <p>Soluções para estabelecimentos comerciais, incluindo SPDA (para-raios), quadros de distribuição e eficiência energética.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon"><i class="bx bx-bolt-circle"></i></div>
-                <h4>Emergências</h4>
-                <p>Atendimento 24h para situações críticas, garantindo que sua operação volte ao normal o mais rápido possível.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon"><i class="bx bx-analyse"></i></div>
-                <h4>Projetos Elétricos</h4>
-                <p>Elaboração de projetos técnicos detalhados, com memorial descritivo, dimensionamento e compliance com as normas ABNT.</p>
-            </div>
-            <div class="service-card">
-                <div class="icon"><i class="bx bxs-sun"></i></div>
-                <h4>Energia Solar</h4>
-                <p>Instalação e dimensionamento de sistemas fotovoltaicos para residências, comércios e indústrias com ROI garantido.</p>
-            </div>
+
+            <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Próximo">
+                <i class="bx bx-chevron-right"></i>
+            </button>
         </div>
+
+        <div class="carousel-dots" id="carouselDots"></div>
     </section>
 
-    <!-- ═══ TIMELINE ═══ -->
+     <!-- ═══ TIMELINE ═══ -->
     <section class="timeline-section" id="timeline">
         <div class="section-label">
             <span class="eyebrow">Nossa trajetória</span>
             <h2>Histórico <span>da Empresa</span></h2>
         </div>
-
+ 
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">20??</div>
+                    <div class="timeline-date">2021</div>
                     <h3>Fundação</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                    <p>Nascimento da LuminarTech com foco no atendimento industrial na região de Três Lagoas–MS.</p>
                 </div>
                 <div style="flex:1"></div>
             </div>
@@ -195,17 +270,17 @@
                 <div class="timeline-dot"></div>
                 <div style="flex:1"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">20??</div>
+                    <div class="timeline-date">2022</div>
                     <h3>Expansão Industrial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                    <p>Início de contratos com grandes indústrias da região e ampliação da equipe técnica.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">20??</div>
+                    <div class="timeline-date">2023</div>
                     <h3>Setor Residencial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                    <p>Expansão dos serviços para o mercado residencial e comercial, com novos projetos e parcerias.</p>
                 </div>
                 <div style="flex:1"></div>
             </div>
@@ -213,13 +288,14 @@
                 <div class="timeline-dot"></div>
                 <div style="flex:1"></div>
                 <div class="timeline-content">
-                    <div class="timeline-date">20??</div>
+                    <div class="timeline-date">2024</div>
                     <h3>Energia Solar</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+                    <p>Lançamento da linha de serviços de energia solar fotovoltaica para todos os segmentos.</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- ═══ PARTNERS ═══ -->
     <section class="partners" id="partners">
@@ -267,11 +343,11 @@
                 </div>
                 <div class="contact-detail">
                     <i class="bx bx-envelope"></i>
-                    <span>????</span>
+                    <span>administrativo@luminartech.com.br</span>
                 </div>
                 <div class="contact-detail">
                     <i class="bx bx-map"></i>
-                    <span>Três Lagoas — Mato Grosso do Sul</span>
+                    <span>Av. Prof.João Thomes, 828, Jd. Alvorada Três Lagoas/MS</span>
                 </div>
                 <div class="contact-detail">
                     <i class="bx bxl-instagram-alt"></i>
@@ -340,18 +416,6 @@
             </div>
 
             <div class="footer-col">
-                <h5>Serviços</h5>
-                <ul>
-                    <li><a href="#services">Industrial</a></li>
-                    <li><a href="#services">Residencial</a></li>
-                    <li><a href="#services">Comercial</a></li>
-                    <li><a href="#services">Emergências 24h</a></li>
-                    <li><a href="#services">Projetos Elétricos</a></li>
-                    <li><a href="#services">Energia Solar</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
                 <h5>Contato</h5>
                 <div class="footer-contact-item">
                     <i class="bx bxl-whatsapp"></i>
@@ -359,15 +423,15 @@
                 </div>
                 <div class="footer-contact-item">
                     <i class="bx bx-envelope"></i>
-                    <span>???????</span>
+                    <span>administrativo@luminartech.com.br</span>
                 </div>
                 <div class="footer-contact-item">
                     <i class="bx bx-map"></i>
-                    <span>Três Lagoas — MS<br>Brasil</span>
+                    <span>Av. Prof.João Thomes, 828, Jd. Alvorada Três Lagoas/MS<br>Brasil</span>
                 </div>
                 <div class="footer-contact-item">
                     <i class="bx bx-time"></i>
-                    <span>Domingo:08h-17h<br>Seg–Quinta: 06h–18h<br>Sex:06h-15h</span>
+                    <span>Seg–Qui: 06h–18h<br>Sexta: 06h-15h<br>Dom: 08h-17h</span>
                 </div>
             </div>
         </div>
@@ -381,7 +445,9 @@
         </div>
     </footer>
     <script src="javascript/script.js"></script>
+    <script src="javascript/carousel.js"></script>
     <script>
+        // ─── TYPED ───
         const words = ['Instalações Industriais', 'Energia Solar', 'Projetos Elétricos', 'Soluções Residenciais', 'Manutenção 24h'];
         let wi = 0, ci = 0, deleting = false;
         const el = document.getElementById('typed');
